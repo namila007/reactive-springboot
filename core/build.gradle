@@ -1,0 +1,13 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    compileOnly 'org.springframework.boot:spring-boot-starter-web'
+
+}
+
+jar {
+    enabled = true
+}
+bootJar {
+    enabled = false
+}

@@ -1,0 +1,37 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testImplementation 'io.projectreactor:reactor-test'
+
+    implementation project(':core')
+
+
+    // https://mvnrepository.com/artifact/org.codehaus.groovy/groovy
+    compile group: 'org.codehaus.groovy', name: 'groovy', version: '3.0.6'
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: "${slf4j}"
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: "${log4j}"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: "${log4j}"
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl
+    testCompile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "${log4j}"
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    testCompile group: 'ch.qos.logback', name: 'logback-classic', version: "${logback}"
+
+}
+test {
+    useJUnitPlatform()
+}
+
+bootJar {
+    enabled = true
+}
