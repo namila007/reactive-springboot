@@ -1,13 +1,28 @@
-apply plugin: 'org.springframework.boot'
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+plugins{
+//    id 'java-library'
+    id "org.springframework.boot"  apply false
+}
+//apply plugin: 'io.spring.dependency-management'
+
+
 
 dependencies {
-    compileOnly 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+    // https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path
+    compile group: 'com.jayway.jsonpath', name: 'json-path', version: '2.5.0'
+
 
 }
+
 
 jar {
     enabled = true
 }
-bootJar {
-    enabled = false
-}
+//bootJar {
+//    enabled = false
+//}
+
