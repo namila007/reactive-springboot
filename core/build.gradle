@@ -12,6 +12,7 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
     implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+//    implementation 'org.springframework.boot:spring-boot-starter-webflux'
     // https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path
     compile group: 'com.jayway.jsonpath', name: 'json-path', version: '2.5.0'
 

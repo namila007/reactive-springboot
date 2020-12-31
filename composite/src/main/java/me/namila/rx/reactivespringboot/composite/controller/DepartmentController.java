@@ -4,28 +4,33 @@ import me.namila.rx.reactivespringboot.core.constant.Routes;
 import me.namila.rx.reactivespringboot.core.model.DepartmentModel;
 import me.namila.rx.reactivespringboot.core.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 
 import javax.validation.constraints.NotNull;
 
+/**
+ * The type Department controller.
+ */
 @RestController
 @RequestMapping(value = Routes.BASE_END_POINT + Routes.DEPARTMENT_BASEURL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class DepartmentController {
 
   private DepartmentService departmentService;
 
-  public Flux<DepartmentModel> getDepartments() {
-    return null;
-  }
-
+  /**
+   * Create department mono.
+   *
+   * @param department the department
+   * @return the mono
+   */
   @PostMapping
   public Mono<ResponseEntity<DepartmentModel>> createDepartment(@NotNull @RequestBody
                                                                         DepartmentModel department) {
@@ -39,9 +44,15 @@ public class DepartmentController {
             new ResponseEntity<>(x, HttpStatus.OK));
   }
 
+  /**
+   * Gets all departments.
+   *
+   * @param pageable the pageable
+   * @return the all departments
+   */
   @GetMapping
-  public Flux<ResponseEntity<DepartmentModel>> getAllDepartments(@RequestBody Pageable pageable) {
-    return departmentService.getAllDepartment().subscribeOn(getScheduler(Schedulers.boundedElastic())).map(x ->
+  public Mono<ResponseEntity<Page<DepartmentModel>>> getAllDepartments(Pageable pageable) {
+    return departmentService.getAllDepartment(pageable).subscribeOn(getScheduler(Schedulers.boundedElastic())).map(x ->
             new ResponseEntity<>(x, HttpStatus.OK));
   }
 
@@ -50,6 +61,11 @@ public class DepartmentController {
     return schedulers;
   }
 
+  /**
+   * Sets department service.
+   *
+   * @param departmentService the department service
+   */
   @Autowired
   public void setDepartmentService(DepartmentService departmentService) {
     this.departmentService = departmentService;

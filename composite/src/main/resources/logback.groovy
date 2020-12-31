@@ -1,8 +1,6 @@
-import ch.qos.logback.classic.encoder.PatternLayoutEncoder
-
 appender("STDOUT", ConsoleAppender) {
     encoder(PatternLayoutEncoder) {
-        pattern = "%d{HH:mm:ss.SSS}  [%thread] %highlight(%-5level) %cyan(%logger{36}) - %msg%n"
+        pattern = "%d{HH:mm:ss.SSS}  [%thread] %highlight(%-5level) %green(%logger{36}) - %msg%n"
     }
 }
-root(INFO, ["STDOUT"])
+root(DEBUG, ["STDOUT"])
