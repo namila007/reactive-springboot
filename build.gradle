@@ -1,5 +1,3 @@
-import org.springframework.boot.gradle.plugin.SpringBootPlugin
-
 buildscript {
 
     repositories {
@@ -15,7 +13,7 @@ buildscript {
 plugins {
     id 'java-library'
     id 'org.springframework.boot' version "${springBoot}"
-    id 'io.spring.dependency-management' version "${dependencyManagement}"
+//    id 'io.spring.dependency-management' version "${dependencyManagement}"
 
 }
 
@@ -34,6 +32,10 @@ allprojects {
     }
 
 
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
 }
 subprojects {
 
@@ -55,10 +57,9 @@ subprojects {
         annotationProcessor 'org.projectlombok:lombok'
         compileOnly 'org.projectlombok:lombok'
         // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
-        compile group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: "${springBoot}"
+        implementation 'org.springframework.boot:spring-boot-starter-validation'
 
         testImplementation 'org.mockito:mockito-core:3.6.0'
-
         testImplementation 'io.projectreactor:reactor-test'
 
         // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
@@ -67,7 +68,7 @@ subprojects {
         compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: "${log4j}"
         compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: "${log4j}"
         // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl
-        compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "${log4j}"
+//        compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "${log4j}"
         // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
         compile group: 'ch.qos.logback', name: 'logback-classic', version: "${logback}"
 
@@ -76,14 +77,15 @@ subprojects {
     configurations {
         all {
             exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
-            exclude group: 'ch.qos.logback', module: 'logback-classic'
+            exclude group: 'org.springframework.boot', module: 'spring-boot-starter-web'
+            exclude group: 'org.springframework.boot', module: 'spring-boot-starter-log4j2'
             exclude group: 'org.apache.logging.log4j', module: 'log4j-to-slf4j'
         }
     }
 
     dependencyManagement {
         imports {
-            mavenBom SpringBootPlugin.BOM_COORDINATES
+            mavenBom(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES)
         }
     }
 }

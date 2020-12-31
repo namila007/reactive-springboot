@@ -1,0 +1,15 @@
+
+…
+java:S1450"cRemove the "departmentRepository" field and declare it as a local variable in the relevant methods.(ßÆğıÿÿÿÿ8ß±–¦ë.
+g
+java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„€äĞ
+|
+java:S1128"_Remove this unused import 'org.springframework.data.repository.support.PageableExecutionUtils'.(°åçÀ8Ê­î¥ë.
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÔÙ“¤ë.
+Z
+java:S1128"8Remove this unused import 'reactor.core.publisher.Flux'.(·äÍÆøÿÿÿÿ8º¤Š¤ë.
+P	java:S125)"<This block of commented-out lines of code should be removed.(ˆó•
+X	java:S125."<This block of commented-out lines of code should be removed.(ÅÎÈ²8éÖ¥ë.
+Z
+java:S1068"8Remove this unused "departmentRepository" private field.(ßÆğıÿÿÿÿ8ß±–¦ë.
