@@ -2,49 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e468388-a4b1-4ad4-9e3c-7b976a8b3b8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/252a8d18f775aeb3aca330d81ac931b2688d9dd3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31a87890f3ca218ad6aa7ab407c25dd7d7a0d1cd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3ebfc66f701327ac2bbd93ba2060373dd063e784" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e52e2f90ef87af029122790d7185bbb852489c7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89e977e3a2fc193b9134ad3794de3ec7bc513800" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/919b092c465761f99a23a30d7a755992b7fc9934" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f0a9e12e6f0fd8ad7675c71cec2110c64507eef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a64cf904d97d58e0c337202f337b594247b25dd6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d46c80e80af10edac3e451fa8be9530c6cdeaea9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0720dbc12755f7c397a073e8d6a9065d1e4acdd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e933f5359d001b78904f36ee1876c652bc089960" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed4aa85cbf715ca24486c48abe5c5f11d3215273" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f03569b44c7a0d6146a5e8e7eb8271f3e49582dd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composite/src/test/java/me/namila/rx/reactivespringboot/composite/controller/DepartmentControllerUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/AppWebFluxConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/JsonSortDeserialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/JsonSortSerialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/model/PageableResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composite/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/composite/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/exception/AbstractException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/exception/CustomErrorAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3ebfc66f701327ac2bbd93ba2060373dd063e784" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e52e2f90ef87af029122790d7185bbb852489c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed4aa85cbf715ca24486c48abe5c5f11d3215273" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/handler/ResponseExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/handler/model/APIError.java" beforeDir="false" afterPath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/handler/model/APIError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/handler/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composite/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/composite/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composite/src/main/resources/logback.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/composite/src/main/resources/logback.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composite/src/test/java/me/namila/rx/reactivespringboot/composite/controller/DepartmentJSONControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/MongoReactive.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/MongoReactive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/AppWebFluxConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/AppWebFluxConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/exception/MongoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/exception/MongoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/BaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/DepartmentService.java" afterDir="false" />
@@ -98,6 +67,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -145,7 +120,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39770114" />
-    <property name="settings.editor.selected.configurable" value="google-java-format.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -162,7 +137,7 @@
       <command value="gradlew build --refresh-dependencies" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.react-spring [test]">
+  <component name="RunManager" selected="Spring Boot.ReactiveSpringbootApplication">
     <configuration name="DepartmentControllerTest.createDepartmentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -293,7 +268,8 @@
       <workItem from="1609166814625" duration="2230000" />
       <workItem from="1609321897134" duration="15089000" />
       <workItem from="1609359405044" duration="127000" />
-      <workItem from="1609360276799" duration="34448000" />
+      <workItem from="1609360276799" duration="34733000" />
+      <workItem from="1609497788543" duration="13995000" />
     </task>
     <task id="LOCAL-00001" summary="webMVC app">
       <created>1609447246061</created>
@@ -302,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609447246061</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WebFlux integration, logback, exception handling">
+      <created>1609458790984</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609458790984</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +294,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="webMVC app" />
-    <option name="LAST_COMMIT_MESSAGE" value="webMVC app" />
+    <MESSAGE value="WebFlux integration, logback, exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebFlux integration, logback, exception handling" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -321,86 +305,86 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1609372901800" />
-    <state x="703" y="163" width="566" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1609454544579">
+    <state x="703" y="163" width="566" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1609519407530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="703" y="163" width="566" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609454544579" />
-    <state x="494" y="185" width="733" height="592" key="#xdebugger.evaluate" timestamp="1609455480038">
+    <state x="703" y="163" width="566" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609519407530" />
+    <state x="577" y="232" width="733" height="592" key="#xdebugger.evaluate" timestamp="1609522430054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="494" y="185" width="733" height="592" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1609455480038" />
-    <state x="269" y="7" key="CommitChangelistDialog2" timestamp="1609447206321">
+    <state x="577" y="232" width="733" height="592" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1609522430054" />
+    <state x="269" y="7" key="CommitChangelistDialog2" timestamp="1609525754051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="269" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609447206321" />
+    <state x="269" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609525754051" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1609420320811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1609420320811" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1609367371444">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1609520739468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609367371444" />
-    <state width="1493" height="247" key="GridCell.Tab.0.bottom" timestamp="1609458321692">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609520739468" />
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1609525621996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609458321692" />
-    <state width="1493" height="247" key="GridCell.Tab.0.center" timestamp="1609458321692">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609525621996" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1609525621996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609458321692" />
-    <state width="1493" height="247" key="GridCell.Tab.0.left" timestamp="1609458321691">
+    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609525621996" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1609525621996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609458321691" />
-    <state width="1493" height="247" key="GridCell.Tab.0.right" timestamp="1609458321692">
+    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609525621996" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1609525621996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609458321692" />
-    <state width="1493" height="247" key="GridCell.Tab.1.bottom" timestamp="1609458321692">
+    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609525621996" />
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom" timestamp="1609525621789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609458321692" />
-    <state width="1493" height="247" key="GridCell.Tab.1.center" timestamp="1609458321692">
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609525621789" />
+    <state width="1493" height="266" key="GridCell.Tab.1.center" timestamp="1609525621788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609458321692" />
-    <state width="1493" height="247" key="GridCell.Tab.1.left" timestamp="1609458321692">
+    <state width="1493" height="266" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609525621788" />
+    <state width="1493" height="266" key="GridCell.Tab.1.left" timestamp="1609525621788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609458321692" />
-    <state width="1493" height="247" key="GridCell.Tab.1.right" timestamp="1609458321692">
+    <state width="1493" height="266" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609525621788" />
+    <state width="1493" height="266" key="GridCell.Tab.1.right" timestamp="1609525621788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609458321692" />
-    <state width="1493" height="266" key="GridCell.Tab.2.bottom" timestamp="1609458027016">
+    <state width="1493" height="266" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609525621788" />
+    <state width="1493" height="266" key="GridCell.Tab.2.bottom" timestamp="1609525621789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609458027016" />
-    <state width="1493" height="266" key="GridCell.Tab.2.center" timestamp="1609458027016">
+    <state width="1493" height="266" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609525621789" />
+    <state width="1493" height="266" key="GridCell.Tab.2.center" timestamp="1609525621789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1609458027016" />
-    <state width="1493" height="266" key="GridCell.Tab.2.left" timestamp="1609458027016">
+    <state width="1493" height="266" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1609525621789" />
+    <state width="1493" height="266" key="GridCell.Tab.2.left" timestamp="1609525621789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1609458027016" />
-    <state width="1493" height="266" key="GridCell.Tab.2.right" timestamp="1609458027016">
+    <state width="1493" height="266" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1609525621789" />
+    <state width="1493" height="266" key="GridCell.Tab.2.right" timestamp="1609525621789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1609458027016" />
+    <state width="1493" height="266" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1609525621789" />
     <state x="406" y="123" key="RollbackChangesDialog" timestamp="1609370177620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="406" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609370177620" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1609458546417">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1609520697697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609458546417" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1609447256704">
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609520697697" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1609458820648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609447256704" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609458820648" />
     <state x="525" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609453034667">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -421,10 +405,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="511" y="32" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1609348866394" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1609358634391">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1609517662092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1609358634391" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1609517662092" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -435,14 +419,17 @@
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.3.5.RELEASE/669ddf97d7c1f15820c010e8ccd127f389b61757/spring-boot-2.3.5.RELEASE-sources.jar!/org/springframework/boot/web/reactive/error/DefaultErrorAttributes.java</url>
-          <line>128</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.3.5.RELEASE/669ddf97d7c1f15820c010e8ccd127f389b61757/spring-boot-2.3.5.RELEASE-sources.jar!/org/springframework/boot/logging/AbstractLoggingSystem.java</url>
           <line>69</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/controller/DepartmentController.java</url>
+          <line>77</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

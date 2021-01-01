@@ -61,8 +61,7 @@ public class GlobalExceptionHandler extends AbstractErrorWebExceptionHandler {
         Map<String, Object> errorAttributesMap =
                 getErrorAttributes(
                         request,
-                        ErrorAttributeOptions.of(
-                                ErrorAttributeOptions.Include.MESSAGE, ErrorAttributeOptions.Include.EXCEPTION));
+                        ErrorAttributeOptions.of(ErrorAttributeOptions.Include.EXCEPTION));
         LOGGER.error(
                 "Error Occured: {}", getErrorAttributes(request, ErrorAttributeOptions.defaults()));
         int status = (int) Optional.ofNullable(errorAttributesMap.get("status")).orElse(500);

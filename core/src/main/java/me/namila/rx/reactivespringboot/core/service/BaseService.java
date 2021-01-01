@@ -59,6 +59,14 @@ public abstract class BaseService<T, ID> {
     return genericRepository.findById(id);
   }
 
+  protected Mono<Boolean> delete(ID id) {
+    return genericRepository.existsById(id)
+            .flatMap(v -> {
+              if (Boolean.TRUE.equals(v)) return genericRepository.deleteById(id).thenReturn(Boolean.TRUE);
+              else return Mono.just(Boolean.FALSE);
+            });
+  }
+
   /**
    * Gets all. better to do this on DB query (performance hit) check @getAllByQuery func
    *
@@ -84,19 +92,15 @@ public abstract class BaseService<T, ID> {
     return reactiveMongoTemplate
             .find(query, classType)
             .collectList()
-            .flatMap(
-                    list ->
-                            reactiveMongoTemplate
-                                    .count(new Query(), this.classType)
-                                    .subscribeOn(Schedulers.immediate())
-                                    .map(
-                                            count ->
-                                                    new PageableResponse<T>(
-                                                            list,
-                                                            pageable.getPageNumber(),
-                                                            pageable.getPageSize(),
-                                                            pageable.getSort(),
-                                                            count)));
+            .flatMap(list -> reactiveMongoTemplate
+                    .count(new Query(), this.classType)
+                    .subscribeOn(Schedulers.immediate())
+                    .map(count -> new PageableResponse<T>(
+                            list,
+                            pageable.getPageNumber(),
+                            pageable.getPageSize(),
+                            pageable.getSort(),
+                            count)));
   }
 
   /**

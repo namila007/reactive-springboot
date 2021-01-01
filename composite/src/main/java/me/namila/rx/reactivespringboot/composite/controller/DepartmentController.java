@@ -42,6 +42,12 @@ public class DepartmentController {
             .map(x -> new ResponseEntity<>(x, HttpStatus.CREATED));
   }
 
+  /**
+   * Gets department.
+   *
+   * @param id the id
+   * @return the department
+   */
   @GetMapping(path = Routes.ID_PARAM)
   public Mono<ResponseEntity<DepartmentModel>> getDepartment(@PathVariable String id) {
     return departmentService
@@ -60,6 +66,14 @@ public class DepartmentController {
   public Mono<ResponseEntity<Page<DepartmentModel>>> getAllDepartments(Pageable pageable) {
     return departmentService
             .getAllDepartment(pageable)
+            .subscribeOn(getScheduler(Schedulers.boundedElastic()))
+            .map(x -> new ResponseEntity<>(x, HttpStatus.OK));
+  }
+
+  @DeleteMapping(path = Routes.ID_PARAM)
+  public Mono<ResponseEntity<Object>> deleteDepartment(@PathVariable String id) {
+    return departmentService
+            .deleteDepartment(id)
             .subscribeOn(getScheduler(Schedulers.boundedElastic()))
             .map(x -> new ResponseEntity<>(x, HttpStatus.OK));
   }
