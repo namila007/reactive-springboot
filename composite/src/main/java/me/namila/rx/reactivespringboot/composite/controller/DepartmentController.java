@@ -70,6 +70,12 @@ public class DepartmentController {
             .map(x -> new ResponseEntity<>(x, HttpStatus.OK));
   }
 
+  /**
+   * Delete department mono.
+   *
+   * @param id the id
+   * @return the mono
+   */
   @DeleteMapping(path = Routes.ID_PARAM)
   public Mono<ResponseEntity<Object>> deleteDepartment(@PathVariable String id) {
     return departmentService

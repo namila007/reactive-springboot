@@ -34,8 +34,7 @@ public class MongoException extends AbstractException {
      * @param e          the e
      *                   <p>Here exception will be thrown by rootcause
      */
-  public MongoException(HttpStatus httpStatus, String message, Throwable e) {
-      super(httpStatus, message,e);
-  }
-
+    public MongoException(HttpStatus httpStatus, String message, Throwable e) {
+        super(httpStatus, message, e);
+    }
 }

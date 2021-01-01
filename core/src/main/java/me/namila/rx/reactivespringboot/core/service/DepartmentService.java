@@ -89,13 +89,14 @@ public class DepartmentService extends BaseService<DepartmentModel, String> {
      */
     public Mono<JSONObject> deleteDepartment(String id) {
         return this.delete(id)
-                .map(val -> {
-                    if (Boolean.FALSE.equals(val))
-                        throw new MongoException("No Department found for the given id: " + id);
-                    JSONObject jsonObject = new JSONObject();
-                    jsonObject.appendField("deleted", "ok");
-                    return jsonObject;
-                })
+                .map(
+                        val -> {
+                            if (Boolean.FALSE.equals(val))
+                                throw new MongoException("No Department found for the given id: " + id);
+                            JSONObject jsonObject = new JSONObject();
+                            jsonObject.appendField("deleted", "ok");
+                            return jsonObject;
+                        })
                 .onErrorMap(
                         error -> {
                             LOGGER.error("Error Occured: {}", error.getMessage());

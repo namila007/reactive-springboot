@@ -8,6 +8,9 @@ import org.springframework.data.domain.Sort;
 
 import java.io.IOException;
 
+/**
+ * The type Json sort serialization.
+ */
 @JsonComponent
 public class JsonSortSerialization extends JsonSerializer<Sort> {
 

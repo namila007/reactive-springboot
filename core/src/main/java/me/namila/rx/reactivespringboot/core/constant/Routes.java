@@ -49,5 +49,4 @@ public class Routes {
      * The constant NAME_PARAM.
      */
     public static final String NAME_PARAM = "/{name}";
-
 }

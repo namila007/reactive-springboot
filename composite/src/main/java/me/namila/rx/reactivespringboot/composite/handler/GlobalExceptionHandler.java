@@ -25,48 +25,46 @@ import java.util.Optional;
 @Order(-2)
 public class GlobalExceptionHandler extends AbstractErrorWebExceptionHandler {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+  private static Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
-    /**
-     * Create a new {@code DefaultErrorWebExceptionHandler} instance.
-     *
-     * @param errorAttributes    the error attributes
-     * @param resourceProperties the resources configuration properties
-     * @param applicationContext the current application context
-     * @param codecConfigurer    the codec configurer
-     */
-    public GlobalExceptionHandler(
-            ErrorAttributes errorAttributes,
-            ResourceProperties resourceProperties,
-            ApplicationContext applicationContext,
-            ServerCodecConfigurer codecConfigurer) {
-        super(errorAttributes, resourceProperties, applicationContext);
-        this.setMessageWriters(codecConfigurer.getWriters());
-    }
+  /**
+   * Create a new {@code DefaultErrorWebExceptionHandler} instance.
+   *
+   * @param errorAttributes    the error attributes
+   * @param resourceProperties the resources configuration properties
+   * @param applicationContext the current application context
+   * @param codecConfigurer    the codec configurer
+   */
+  public GlobalExceptionHandler(
+          ErrorAttributes errorAttributes,
+          ResourceProperties resourceProperties,
+          ApplicationContext applicationContext,
+          ServerCodecConfigurer codecConfigurer) {
+    super(errorAttributes, resourceProperties, applicationContext);
+    this.setMessageWriters(codecConfigurer.getWriters());
+  }
 
-    @Override
-    protected RouterFunction<ServerResponse> getRoutingFunction(ErrorAttributes errorAttributes) {
-        return RouterFunctions.route(RequestPredicates.all(), this::formatErrorResponse);
-    }
+  @Override
+  protected RouterFunction<ServerResponse> getRoutingFunction(ErrorAttributes errorAttributes) {
+    return RouterFunctions.route(RequestPredicates.all(), this::formatErrorResponse);
+  }
 
-    // ToDO use custom API Error model for body
+  //  ToDo use custom API Error model for body >> Done using CustomErrorAttributes.class
 
-    /**
-     * Custom formatter for error response
-     *
-     * @param request
-     * @return
-     */
-    private Mono<ServerResponse> formatErrorResponse(ServerRequest request) {
-        Map<String, Object> errorAttributesMap =
-                getErrorAttributes(
-                        request,
-                        ErrorAttributeOptions.of(ErrorAttributeOptions.Include.EXCEPTION));
-        LOGGER.error(
-                "Error Occured: {}", getErrorAttributes(request, ErrorAttributeOptions.defaults()));
-        int status = (int) Optional.ofNullable(errorAttributesMap.get("status")).orElse(500);
-        return ServerResponse.status(status)
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromValue(errorAttributesMap));
-    }
+  /**
+   * Custom formatter for error response
+   *
+   * @param request
+   * @return
+   */
+  private Mono<ServerResponse> formatErrorResponse(ServerRequest request) {
+    Map<String, Object> errorAttributesMap =
+            getErrorAttributes(
+                    request, ErrorAttributeOptions.of(ErrorAttributeOptions.Include.EXCEPTION));
+    LOGGER.error("Error Occured: {}", getErrorAttributes(request, ErrorAttributeOptions.defaults()));
+    int status = (int) Optional.ofNullable(errorAttributesMap.get("status")).orElse(500);
+    return ServerResponse.status(status)
+            .contentType(MediaType.APPLICATION_JSON)
+            .body(BodyInserters.fromValue(errorAttributesMap));
+  }
 }

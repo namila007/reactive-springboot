@@ -32,7 +32,7 @@ public abstract class BaseService<T, ID> {
    * Instantiates a new Base service.
    *
    * @param classType the class type
-   * @param idType    the id type
+   * @param idType the id type
    */
   public BaseService(Class<T> classType, Class<ID> idType) {
     this.classType = classType;
@@ -59,12 +59,21 @@ public abstract class BaseService<T, ID> {
     return genericRepository.findById(id);
   }
 
+  /**
+   * Delete mono. check if id exists, if yes delete and return true, else false
+   *
+   * @param id the id
+   * @return the mono
+   */
   protected Mono<Boolean> delete(ID id) {
-    return genericRepository.existsById(id)
-            .flatMap(v -> {
-              if (Boolean.TRUE.equals(v)) return genericRepository.deleteById(id).thenReturn(Boolean.TRUE);
-              else return Mono.just(Boolean.FALSE);
-            });
+    return genericRepository
+            .existsById(id)
+            .flatMap(
+                    v -> {
+                      if (Boolean.TRUE.equals(v))
+                        return genericRepository.deleteById(id).thenReturn(Boolean.TRUE);
+                      else return Mono.just(Boolean.FALSE);
+                    });
   }
 
   /**
@@ -92,15 +101,19 @@ public abstract class BaseService<T, ID> {
     return reactiveMongoTemplate
             .find(query, classType)
             .collectList()
-            .flatMap(list -> reactiveMongoTemplate
-                    .count(new Query(), this.classType)
-                    .subscribeOn(Schedulers.immediate())
-                    .map(count -> new PageableResponse<T>(
-                            list,
-                            pageable.getPageNumber(),
-                            pageable.getPageSize(),
-                            pageable.getSort(),
-                            count)));
+            .flatMap(
+                    list ->
+                            reactiveMongoTemplate
+                                    .count(new Query(), this.classType)
+                                    .subscribeOn(Schedulers.immediate())
+                                    .map(
+                                            count ->
+                                                    new PageableResponse<T>(
+                                                            list,
+                                                            pageable.getPageNumber(),
+                                                            pageable.getPageSize(),
+                                                            pageable.getSort(),
+                                                            count)));
   }
 
   /**

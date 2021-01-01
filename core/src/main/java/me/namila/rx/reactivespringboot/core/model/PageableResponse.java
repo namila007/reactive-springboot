@@ -11,12 +11,12 @@ import java.util.List;
 
 public class PageableResponse<T> extends PageImpl<T> {
 
-    public PageableResponse(@JsonProperty("content") List<T> content,
-                            @JsonProperty("number") int page,
-                            @JsonProperty("size") int size,
-                            @JsonProperty("sort") @JsonDeserialize(using = JsonSortDeserialization.class) Sort sort,
-                            @JsonProperty("totalElements") long totalElements) {
+    public PageableResponse(
+            @JsonProperty("content") List<T> content,
+            @JsonProperty("number") int page,
+            @JsonProperty("size") int size,
+            @JsonProperty("sort") @JsonDeserialize(using = JsonSortDeserialization.class) Sort sort,
+            @JsonProperty("totalElements") long totalElements) {
         super(content, PageRequest.of(page, size, sort), totalElements);
     }
-
 }
