@@ -7,26 +7,28 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
+import java.io.Serializable;
+
 /**
  * The type Base service.
  *
- * @param <T>  the type parameter
+ * @param <T> the type parameter
  * @param <ID> the type parameter
  */
 @NoArgsConstructor
-public abstract class BaseService<T, ID> {
+public abstract class BaseService<T, ID extends Serializable> {
 
-  private GenericRepository<T, ID> genericRepository;
+  @Autowired private GenericRepository<T, ID> genericRepository;
 
   private Class<T> classType;
   private Class<ID> idType;
-  @Autowired
-  private ReactiveMongoTemplate reactiveMongoTemplate;
+  @Autowired private ReactiveMongoTemplate reactiveMongoTemplate;
 
   /**
    * Instantiates a new Base service.
@@ -67,13 +69,13 @@ public abstract class BaseService<T, ID> {
    */
   protected Mono<Boolean> delete(ID id) {
     return genericRepository
-            .existsById(id)
-            .flatMap(
-                    v -> {
-                      if (Boolean.TRUE.equals(v))
-                        return genericRepository.deleteById(id).thenReturn(Boolean.TRUE);
-                      else return Mono.just(Boolean.FALSE);
-                    });
+        .existsById(id)
+        .flatMap(
+            v -> {
+              if (Boolean.TRUE.equals(v))
+                return genericRepository.deleteById(id).thenReturn(Boolean.TRUE);
+              else return Mono.just(Boolean.FALSE);
+            });
   }
 
   /**
@@ -84,9 +86,9 @@ public abstract class BaseService<T, ID> {
    */
   protected Flux<T> getAll(Pageable pageable) {
     return genericRepository
-            .findAll(pageable.getSort())
-            .skip(pageable.getOffset())
-            .take(pageable.getPageSize());
+        .findAll(pageable.getSort())
+        .skip(pageable.getOffset())
+        .take(pageable.getPageSize());
   }
 
   /**
@@ -99,21 +101,31 @@ public abstract class BaseService<T, ID> {
     Query query = new Query().with(pageable);
 
     return reactiveMongoTemplate
-            .find(query, classType)
-            .collectList()
-            .flatMap(
-                    list ->
-                            reactiveMongoTemplate
-                                    .count(new Query(), this.classType)
-                                    .subscribeOn(Schedulers.immediate())
-                                    .map(
-                                            count ->
-                                                    new PageableResponse<T>(
-                                                            list,
-                                                            pageable.getPageNumber(),
-                                                            pageable.getPageSize(),
-                                                            pageable.getSort(),
-                                                            count)));
+        .find(query, classType)
+        .collectList()
+        .flatMap(
+            list ->
+                reactiveMongoTemplate
+                    .count(new Query(), this.classType)
+                    .subscribeOn(Schedulers.immediate())
+                    .map(
+                        count ->
+                            new PageableResponse<T>(
+                                list,
+                                pageable.getPageNumber(),
+                                pageable.getPageSize(),
+                                pageable.getSort(),
+                                count)));
+  }
+
+  protected Mono<Boolean> isExistsByUniqueId(T object) {
+    Query query = new Query(Criteria.byExample(object));
+    return this.reactiveMongoTemplate.exists(query, classType);
+  }
+
+  protected Mono<T> findByUniqueId(T object) {
+    Query query = new Query(Criteria.byExample(object));
+    return this.reactiveMongoTemplate.findOne(query, classType);
   }
 
   /**

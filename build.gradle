@@ -72,6 +72,11 @@ subprojects {
         // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
         compile group: 'ch.qos.logback', name: 'logback-classic', version: "${logback}"
 
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            exclude group: 'org.junit.vintage'
+        }
+        testImplementation 'io.projectreactor:reactor-test'
+
     }
 
     configurations {

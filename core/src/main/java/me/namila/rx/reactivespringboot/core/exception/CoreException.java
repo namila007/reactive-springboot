@@ -5,13 +5,13 @@ import org.springframework.http.HttpStatus;
 /**
  * The type Not found exception.
  */
-public class NotFoundException extends AbstractException {
+public class CoreException extends AbstractException {
     /**
      * Instantiates a new Not found exception.
      *
      * @param status the status
      */
-    public NotFoundException(HttpStatus status) {
+    public CoreException(HttpStatus status) {
         super(status);
     }
 
@@ -21,7 +21,7 @@ public class NotFoundException extends AbstractException {
      * @param status the status
      * @param reason the reason
      */
-    public NotFoundException(HttpStatus status, String reason) {
+    public CoreException(HttpStatus status, String reason) {
         super(status, reason);
     }
 
@@ -32,7 +32,7 @@ public class NotFoundException extends AbstractException {
      * @param reason the reason
      * @param cause  the cause
      */
-    public NotFoundException(HttpStatus status, String reason, Throwable cause) {
+    public CoreException(HttpStatus status, String reason, Throwable cause) {
         super(status, reason, cause);
     }
 }

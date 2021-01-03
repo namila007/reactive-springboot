@@ -5,11 +5,13 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import org.springframework.boot.jackson.JsonComponent;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Order;
 
 import java.io.IOException;
-
+//ToDo JsonProperty value is not deserialized for pagebale sort properly
+@JsonComponent
 public class JsonSortDeserialization extends JsonDeserializer<Sort> {
 
     @Override
