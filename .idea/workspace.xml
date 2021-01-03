@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e468388-a4b1-4ad4-9e3c-7b976a8b3b8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/composite/src/main/java/me/namila/rx/reactivespringboot/composite/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/repository/GenericRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/java/me/namila/rx/reactivespringboot/core/service/DepartmentServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31a87890f3ca218ad6aa7ab407c25dd7d7a0d1cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31a87890f3ca218ad6aa7ab407c25dd7d7a0d1cd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89e977e3a2fc193b9134ad3794de3ec7bc513800" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89e977e3a2fc193b9134ad3794de3ec7bc513800" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f0a9e12e6f0fd8ad7675c71cec2110c64507eef" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f0a9e12e6f0fd8ad7675c71cec2110c64507eef" afterDir="false" />
@@ -17,16 +12,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f03569b44c7a0d6146a5e8e7eb8271f3e49582dd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f03569b44c7a0d6146a5e8e7eb8271f3e49582dd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composite/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/composite/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/JsonSortDeserialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/JsonSortDeserialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/MongoReactive.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/configuration/MongoReactive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/exception/CoreException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/model/DepartmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/model/DepartmentModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/model/EmployeeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/repository/GenericRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/repository/GenericRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/DepartmentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +278,7 @@
       <workItem from="1609359405044" duration="127000" />
       <workItem from="1609360276799" duration="34733000" />
       <workItem from="1609497788543" duration="17330000" />
-      <workItem from="1609661783979" duration="26507000" />
+      <workItem from="1609661783979" duration="26893000" />
     </task>
     <task id="LOCAL-00001" summary="webMVC app">
       <created>1609447246061</created>
@@ -330,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609532221142</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="employee, base repo,">
+      <created>1609708817386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609708817386</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +334,8 @@
     <MESSAGE value="jackson mapper config added" />
     <MESSAGE value="exception handling" />
     <MESSAGE value="code formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="code formatting" />
+    <MESSAGE value="employee, base repo," />
+    <option name="LAST_COMMIT_MESSAGE" value="employee, base repo," />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -366,10 +359,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="701" y="232" width="733" height="592" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1609698329704" />
-    <state x="269" y="7" key="CommitChangelistDialog2" timestamp="1609532212358">
+    <state x="269" y="7" key="CommitChangelistDialog2" timestamp="1609708797122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="269" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609532212358" />
+    <state x="269" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609708797122" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1609420320811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -434,10 +427,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609707053374" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1609532228688">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1609708824402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609532228688" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609708824402" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1609698267776">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
