@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6e468388-a4b1-4ad4-9e3c-7b976a8b3b8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31a87890f3ca218ad6aa7ab407c25dd7d7a0d1cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31a87890f3ca218ad6aa7ab407c25dd7d7a0d1cd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89e977e3a2fc193b9134ad3794de3ec7bc513800" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89e977e3a2fc193b9134ad3794de3ec7bc513800" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f0a9e12e6f0fd8ad7675c71cec2110c64507eef" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f0a9e12e6f0fd8ad7675c71cec2110c64507eef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a64cf904d97d58e0c337202f337b594247b25dd6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a64cf904d97d58e0c337202f337b594247b25dd6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d46c80e80af10edac3e451fa8be9530c6cdeaea9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d46c80e80af10edac3e451fa8be9530c6cdeaea9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e933f5359d001b78904f36ee1876c652bc089960" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e933f5359d001b78904f36ee1876c652bc089960" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f03569b44c7a0d6146a5e8e7eb8271f3e49582dd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f03569b44c7a0d6146a5e8e7eb8271f3e49582dd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/me/namila/rx/reactivespringboot/core/service/EmployeeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/me/namila/rx/reactivespringboot/core/service/DepartmentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/me/namila/rx/reactivespringboot/core/service/DepartmentServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/composite">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -39,18 +44,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -62,13 +62,43 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
+                <item name="composite" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
+                <item name="composite" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="reactive-spring-boot" type="f1a62948:ProjectNode" />
+                <item name="composite" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -80,9 +110,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -100,9 +130,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mI2BpLwul2vkWPILn3ObVwRJbV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -131,11 +161,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="me.namila.rx.reactivespringboot.core.service" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="me.namila.rx.reactivespringboot.core.configuration" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="me.namila.rx.reactivespringboot.core.service" />
@@ -146,20 +176,32 @@
       <command value="gradlew build --refresh-dependencies" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReactiveSpringbootApplication">
-    <configuration name="DepartmentControllerUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EmployeeServiceTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;me.namila.rx.reactivespringboot.composite.controller.DepartmentControllerUnitTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;me.namila.rx.reactivespringboot.core.service.EmployeeServiceTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":composite:cleanTest" />
-            <option value=":composite:test" />
+            <option value=":core:test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,19 +209,18 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DepartmentJSONControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EmployeeServiceTest.createEmployeeTestWithExistingDepartment" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;me.namila.rx.reactivespringboot.composite.controller.DepartmentJSONControllerTest&quot; --stacktrace" />
+        <option name="scriptParameters" value="--tests &quot;me.namila.rx.reactivespringboot.core.service.EmployeeServiceTest.createEmployeeTestWithExistingDepartment&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":composite:cleanTest" />
-            <option value=":composite:test" />
+            <option value=":core:test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,19 +228,18 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReactiveSpringbootApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EmployeeServiceTest.getEmployeeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;me.namila.rx.reactivespringboot.composite.ReactiveSpringbootApplicationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;me.namila.rx.reactivespringboot.core.service.EmployeeServiceTest.getEmployeeTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":composite:cleanTest" />
-            <option value=":composite:test" />
+            <option value=":core:test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,26 +247,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="react-spring [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EmployeeServiceTest.getEmployeeTestNoEmployeeFoundException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;me.namila.rx.reactivespringboot.core.service.EmployeeServiceTest.getEmployeeTestNoEmployeeFoundException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":core:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="react-spring [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="reactive-springboot [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -252,13 +292,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ReactiveSpringbootApplication" />
+      <item itemvalue="Gradle.EmployeeServiceTest.getEmployeeTest" />
+      <item itemvalue="Gradle.EmployeeServiceTest.getEmployeeTestNoEmployeeFoundException" />
+      <item itemvalue="Gradle.reactive-springboot [test]" />
+      <item itemvalue="Gradle.EmployeeServiceTest.createEmployeeTestWithExistingDepartment" />
+      <item itemvalue="Gradle.EmployeeServiceTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.react-spring [clean]" />
-        <item itemvalue="Gradle.react-spring [test]" />
-        <item itemvalue="Gradle.ReactiveSpringbootApplicationTests" />
-        <item itemvalue="Gradle.DepartmentJSONControllerTest" />
-        <item itemvalue="Gradle.DepartmentControllerUnitTest" />
+        <item itemvalue="Gradle.EmployeeServiceTest" />
+        <item itemvalue="Gradle.EmployeeServiceTest.createEmployeeTestWithExistingDepartment" />
+        <item itemvalue="Gradle.reactive-springboot [test]" />
+        <item itemvalue="Gradle.EmployeeServiceTest.getEmployeeTestNoEmployeeFoundException" />
+        <item itemvalue="Gradle.EmployeeServiceTest.getEmployeeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -351,18 +399,27 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="703" y="163" width="566" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609707893919" />
+    <state x="412" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1609734878356">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1609734878356" />
     <state x="432" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609691682065">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="432" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1609691682065" />
-    <state x="701" y="232" width="733" height="592" key="#xdebugger.evaluate" timestamp="1609698329704">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="662" y="134" width="643" height="594" key="#xdebugger.evaluate" timestamp="1609749133568">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="662" y="134" width="643" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1609749133568" />
     <state x="701" y="232" width="733" height="592" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1609698329704" />
     <state x="269" y="7" key="CommitChangelistDialog2" timestamp="1609708797122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="269" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609708797122" />
+    <state width="396" height="466" key="DebuggerActiveHint" timestamp="1609734961901">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="396" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1609734961901" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1609420320811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -371,37 +428,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609520739468" />
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1609708595716">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="262" key="GridCell.Tab.0.bottom" timestamp="1609750458863">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609750458863" />
     <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609708595716" />
-    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1609708595716">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="262" key="GridCell.Tab.0.center" timestamp="1609750458863">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609750458863" />
     <state width="1493" height="288" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609708595716" />
-    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1609708595716">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="262" key="GridCell.Tab.0.left" timestamp="1609750458863">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609750458863" />
     <state width="1493" height="288" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609708595716" />
-    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1609708595716">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="262" key="GridCell.Tab.0.right" timestamp="1609750458863">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609750458863" />
     <state width="1493" height="288" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609708595716" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1609708595405">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="264" key="GridCell.Tab.1.bottom" timestamp="1609750259785">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="264" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609750259785" />
     <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609708595405" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1609708595405">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="264" key="GridCell.Tab.1.center" timestamp="1609750259785">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="264" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1609750259785" />
     <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609708595405" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1609708595404">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="264" key="GridCell.Tab.1.left" timestamp="1609750259784">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="264" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1609750259784" />
     <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609708595404" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1609708595405">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="264" key="GridCell.Tab.1.right" timestamp="1609750259785">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="264" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1609750259785" />
     <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609708595405" />
     <state width="1493" height="288" key="GridCell.Tab.2.bottom" timestamp="1609708595406">
       <screen x="0" y="0" width="1536" height="824" />
@@ -443,10 +508,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1609663312610" />
-    <state x="507" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1609663386573">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="451" y="102" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1609741619961">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="451" y="102" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1609741619961" />
     <state x="507" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1609663386573" />
+    <state x="199" y="93" width="967" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1609734884501">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="199" y="93" width="967" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1609734884501" />
     <state x="463" y="144" width="910" height="536" key="find.popup" timestamp="1609697742766">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -485,6 +555,15 @@
           <line>69</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/me/namila/rx/reactivespringboot/core/service/BaseService.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="39" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -492,5 +571,8 @@
         <watch expression="((AnnotationConfigReactiveWebServerApplicationContext)((GlobalExceptionHandler)this).applicationContext).logger" language="JAVA" custom="org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext,me.namila.rx.reactivespringboot.composite.handler.GlobalExceptionHandler" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/reactive_spring_boot$DepartmentServiceTest.ic" NAME="DepartmentServiceTest Coverage Results" MODIFIED="1609740109281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

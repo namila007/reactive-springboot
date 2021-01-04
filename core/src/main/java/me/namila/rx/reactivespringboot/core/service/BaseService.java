@@ -91,6 +91,7 @@ public abstract class BaseService<T, ID extends Serializable> {
         .take(pageable.getPageSize());
   }
 
+  //ToDO - remove pageable from this method and move it to parent service class
   /**
    * Gets all by query.
    *

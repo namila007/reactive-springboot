@@ -50,9 +50,14 @@ public class DepartmentService extends BaseService<DepartmentModel, String> {
    * @return the department
    */
   public Mono<DepartmentModel> getDepartment(String id) {
-    return this.get(id);
-    //        .map(x->
-    // x.add(linkTo(methodOn(DepartmentModel.class).setId(x.getId()))).withSelfRel()));
+      return this.get(id)
+              .onErrorMap(
+                      x -> {
+                          LOGGER.error("Service Error: {}", x.getMessage());
+                          return new MongoException("Department Creation Error", x);
+                      });
+      //        .map(x->
+      // x.add(linkTo(methodOn(DepartmentModel.class).setId(x.getId()))).withSelfRel()));
   }
 
   /**

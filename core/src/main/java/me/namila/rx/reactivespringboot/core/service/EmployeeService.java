@@ -53,21 +53,21 @@ public class EmployeeService extends BaseService<EmployeeModel, String> {
           .flatMap(
               department -> {
                 if (department.getId() != null) {
-                  employeeModel.setDepartment(new DepartmentModel(department.getDepartmentNo()));
-                  employeeModel.setDepartmentNo(department.getDepartmentNo());
-                  return this.create(employeeModel)
-                      .map(
-                          emp -> {
-                            emp.setDepartment(department);
-                            return emp;
-                          });
+                    employeeModel.setDepartment(new DepartmentModel(department.getDepartmentNo()));
+                    employeeModel.setDepartmentNo(department.getDepartmentNo());
+                    return this.create(employeeModel)
+                            .map(
+                                    emp -> {
+                                        emp.setDepartment(department);
+                                        return emp;
+                                    });
                 }
-                if (employeeModel.getDepartment().getName() == null)
-                  return Mono.error(
-                      new CoreException(
-                          HttpStatus.NO_CONTENT, JSON.DepartmentJSON.NAME + " is missing"));
+                  if (employeeModel.getDepartment().getName() == null || employeeModel.getDepartment().getName() == "")
+                      return Mono.error(
+                              new CoreException(
+                                      HttpStatus.NO_CONTENT, JSON.DepartmentJSON.NAME + " is missing"));
                 return this.departmentService
-                    .create(employeeModel.getDepartment())
+                        .createDepartment(employeeModel.getDepartment())
                     .flatMap(
                         dep -> {
                           employeeModel.setDepartmentNo(dep.getDepartmentNo());
