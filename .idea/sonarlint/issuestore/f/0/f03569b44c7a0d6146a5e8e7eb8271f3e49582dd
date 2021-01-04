@@ -1,0 +1,15 @@
+
+T
+java:S1135*"2Complete the task associated to this TODO comment.(ÁŒÂùÿÿÿÿ8Ëğ¤ë.
+s
+java:S1128
+"QRemove this unused import 'org.springframework.data.mongodb.core.query.Criteria'.(ıËéæùÿÿÿÿ8âí¢¥ë.
+N
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹8î¢ø£ë.
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8Êê±¦ë.
+|
+java:S1128"_Remove this unused import 'org.springframework.data.repository.support.PageableExecutionUtils'.(°åçÀ8ìŒÃ©ë.
+^	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¹› Ë
+L
+java:S1068"*Remove this unused "idType" private field.(‚å«‘ùÿÿÿÿ8”³ªë.

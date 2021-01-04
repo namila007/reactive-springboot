@@ -13,13 +13,13 @@ buildscript {
 plugins {
     id 'java-library'
     id 'org.springframework.boot' version "${springBoot}"
-    id 'io.spring.dependency-management' version "${dependencyManagement}"
+//    id 'io.spring.dependency-management' version "${dependencyManagement}"
 
 }
 
 allprojects {
     group = 'me.namila.rx'
-    version = '0.0.1-SNAPSHOT'
+    version = '0.1.0-SNAPSHOT'
     sourceCompatibility = '1.8'
 
     apply plugin: "idea"
@@ -31,6 +31,11 @@ allprojects {
         maven { url 'https://repo.spring.io/snapshot' }
     }
 
+
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
 }
 subprojects {
 
@@ -51,11 +56,48 @@ subprojects {
         // Lombok annotation processor
         annotationProcessor 'org.projectlombok:lombok'
         compileOnly 'org.projectlombok:lombok'
+        // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+        implementation 'org.springframework.boot:spring-boot-starter-validation'
 
+        testImplementation 'org.mockito:mockito-core:3.6.0'
+        testImplementation 'io.projectreactor:reactor-test'
 
+        // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+        compile group: 'org.slf4j', name: 'slf4j-api', version: "${slf4j}"
+
+        compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: "${log4j}"
+        compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: "${log4j}"
+        // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl
+//        compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "${log4j}"
+        // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+        compile group: 'ch.qos.logback', name: 'logback-classic', version: "${logback}"
+
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            exclude group: 'org.junit.vintage'
+        }
+        testImplementation 'io.projectreactor:reactor-test'
+
+    }
+
+    configurations {
+        all {
+            exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+            exclude group: 'org.springframework.boot', module: 'spring-boot-starter-web'
+            exclude group: 'org.springframework.boot', module: 'spring-boot-starter-log4j2'
+            exclude group: 'org.apache.logging.log4j', module: 'log4j-to-slf4j'
+        }
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES)
+        }
     }
 }
 
 bootJar {
     enabled = false
+}
+jar {
+    enabled = true
 }
