@@ -75,7 +75,10 @@ subprojects {
         testImplementation('org.springframework.boot:spring-boot-starter-test') {
             exclude group: 'org.junit.vintage'
         }
-        testImplementation 'io.projectreactor:reactor-test'
+
+        compile group: 'io.projectreactor', name: 'reactor-core', version: "${reactor}"
+        // https://mvnrepository.com/artifact/io.projectreactor/reactor-test
+        testCompile group: 'io.projectreactor', name: 'reactor-test', version: "${reactor}"
 
     }
 

@@ -14,4 +14,11 @@ public class BasicConstants {
          */
         public static final String FORWARD_SLASH = "/";
     }
+
+  /** The type Web header. */
+  public static class WebHeader {
+
+    /** The constant CORRELATION_HEADER. */
+    public static final String CORRELATION_HEADER = "X-Correlation-ID";
+    }
 }
