@@ -25,11 +25,11 @@ public class CorrelationHeaderFilterTest {
     webClient
         .get()
         .uri(Routes.BASE_END_POINT + "/test")
-        .header(BasicConstants.WebHeader.CORRELATION_HEADER, correlationId)
+        .header(BasicConstants.WebHeader.X_HEADER_PREFIX+BasicConstants.WebHeader.CORRELATION_HEADER, correlationId)
         .exchange()
         .expectHeader()
         .value(
-            BasicConstants.WebHeader.CORRELATION_HEADER,
+            BasicConstants.WebHeader.X_HEADER_PREFIX+BasicConstants.WebHeader.CORRELATION_HEADER,
             x -> {
               Assertions.assertEquals(correlationId, x);
             })
@@ -47,11 +47,11 @@ public class CorrelationHeaderFilterTest {
     webClient
         .get()
         .uri(Routes.BASE_END_POINT + "/test")
-        .header(BasicConstants.WebHeader.CORRELATION_HEADER, correlationId)
+        .header(BasicConstants.WebHeader.X_HEADER_PREFIX+BasicConstants.WebHeader.CORRELATION_HEADER, correlationId)
         .exchange()
         .expectHeader()
         .value(
-            BasicConstants.WebHeader.CORRELATION_HEADER,
+                BasicConstants.WebHeader.X_HEADER_PREFIX+BasicConstants.WebHeader.CORRELATION_HEADER,
             x -> {
               Assertions.assertEquals(correlationId, x);
             });

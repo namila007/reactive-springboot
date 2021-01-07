@@ -1,24 +1,22 @@
 package me.namila.rx.reactivespringboot.core.constant;
 
-/**
- * The type Basic constants.
- */
+/** The type Basic constants. */
 public class BasicConstants {
 
-    /**
-     * The type Symbols.
-     */
-    public static class Symbols {
-        /**
-         * The constant FORWARD_SLASH.
-         */
-        public static final String FORWARD_SLASH = "/";
-    }
+  public static final String CONTEXT_MAP = "contextMap";
+
+  /** The type Symbols. */
+  public static class Symbols {
+    /** The constant FORWARD_SLASH. */
+    public static final String FORWARD_SLASH = "/";
+  }
 
   /** The type Web header. */
   public static class WebHeader {
 
+    public static final String X_HEADER_PREFIX = "X-";
+
     /** The constant CORRELATION_HEADER. */
-    public static final String CORRELATION_HEADER = "X-Correlation-ID";
-    }
+    public static final String CORRELATION_HEADER = "CORRELATION-ID";
+  }
 }

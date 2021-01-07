@@ -22,7 +22,7 @@ import reactor.core.scheduler.Schedulers;
 /** The type Employee service. */
 @Service
 public class EmployeeService extends BaseService<EmployeeModel, String> {
-  private static Logger LOGGER = LoggerFactory.getLogger(DepartmentService.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(DepartmentService.class);
   private DepartmentService departmentService;
 
   private EmployeeRepository employeeRepository;
@@ -53,21 +53,22 @@ public class EmployeeService extends BaseService<EmployeeModel, String> {
           .flatMap(
               department -> {
                 if (department.getId() != null) {
-                    employeeModel.setDepartment(new DepartmentModel(department.getDepartmentNo()));
-                    employeeModel.setDepartmentNo(department.getDepartmentNo());
-                    return this.create(employeeModel)
-                            .map(
-                                    emp -> {
-                                        emp.setDepartment(department);
-                                        return emp;
-                                    });
+                  employeeModel.setDepartment(new DepartmentModel(department.getDepartmentNo()));
+                  employeeModel.setDepartmentNo(department.getDepartmentNo());
+                  return this.create(employeeModel)
+                      .map(
+                          emp -> {
+                            emp.setDepartment(department);
+                            return emp;
+                          });
                 }
-                  if (employeeModel.getDepartment().getName() == null || employeeModel.getDepartment().getName() == "")
-                      return Mono.error(
-                              new CoreException(
-                                      HttpStatus.NO_CONTENT, JSON.DepartmentJSON.NAME + " is missing"));
+                if (employeeModel.getDepartment().getName() == null
+                    || employeeModel.getDepartment().getName() == "")
+                  return Mono.error(
+                      new CoreException(
+                          HttpStatus.NO_CONTENT, JSON.DepartmentJSON.NAME + " is missing"));
                 return this.departmentService
-                        .createDepartment(employeeModel.getDepartment())
+                    .createDepartment(employeeModel.getDepartment())
                     .flatMap(
                         dep -> {
                           employeeModel.setDepartmentNo(dep.getDepartmentNo());
@@ -129,12 +130,12 @@ public class EmployeeService extends BaseService<EmployeeModel, String> {
                 Flux.fromIterable(page.getContent())
                     .parallel()
                     .runOn(Schedulers.parallel())
-                    .doOnNext(emp -> LOGGER.info("emp: {}", emp))
+                    .doOnNext(emp -> LOGGER.debug("emp: {}", emp))
                     .flatMap(
                         emp ->
                             departmentService
                                 .findByDepartmentNo(emp.getDepartmentNo())
-                                .doOnNext(dep -> LOGGER.info("emp: {}, founded dep: {}", emp, dep))
+                                .doOnNext(dep -> LOGGER.debug("emp: {}, founded dep: {}", emp, dep))
                                 .doOnError(
                                     ex ->
                                         LOGGER.error(
